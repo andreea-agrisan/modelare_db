@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS adresa(
 	autori_id integer unique not null,
 	strada varchar(200) not null,
 	numar integer not null,
-	casa_bloc char null,
+	casa_bloc char(1) null,
 	primary key(id),
 	foreign key(autori_id) references autori(id)
 );
